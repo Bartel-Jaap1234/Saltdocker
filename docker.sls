@@ -1,9 +1,9 @@
 docker:
   pkg.installed:
     - pkgs:
-      - docker-engine
+      - docker-ce
 
   service.running:
     - enable: True
     - require:
-      - pkg:docker
+      - pkg: docker
